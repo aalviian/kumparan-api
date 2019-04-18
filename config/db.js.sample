@@ -1,0 +1,23 @@
+var mysql = require("mysql");
+function Connection() {
+ 
+  this.pool = null;
+ 
+  var cred = {
+    host     : '127.0.0.1',
+    user     : '',
+    password : '',
+    database : ''
+  };
+ 
+  this.init = function() {
+    this.pool = mysql.createPool(cred);
+  }
+ 
+  this.acquire = function(callback) {
+    this.pool.getConnection(function(err, connection) {
+      callback(err, connection);
+    });
+  };
+}
+module.exports = new Connection();

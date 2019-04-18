@@ -1,0 +1,33 @@
+{
+  "name": "kumparan-api",
+  "version": "1.0.0",
+  "description": "kumparan API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "kumparan",
+    "api"
+  ],
+  "author": "Muhammad Alvian Supriadi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "curlrequest": "^1.0.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "mailgun-js": "^0.20.0",
+    "mandrill-api": "^1.0.45",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  }
+}
