@@ -3,7 +3,10 @@ var db = require('../../config/db');
 function Story() {
   
   var _this = this;
-   
+  this.indexWelcome = = function(req, res) {
+    return res.json({status: 200, message: 'Welcome to Kumparan API'});
+  };
+
   this.getTitle = function(req, res) {
     console.log(req.query.id);
     db.acquire(function(err, con) {
