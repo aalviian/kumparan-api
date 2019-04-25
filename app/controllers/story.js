@@ -3,7 +3,7 @@ var db = require('../../config/db');
 function Story() {
   
   var _this = this;
-  this.indexWelcome = = function(req, res) {
+  this.indexWelcome = function(req, res) {
     return res.json({status: 200, message: 'Welcome to Kumparan API'});
   };
 
